@@ -50,11 +50,17 @@ TagManager:
   - name: Water Background
     uniqueID: 1261126633
     locked: 0
-  - name: Main
-    uniqueID: 1349508651
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2538377071
+    locked: 0
+  - name: Foreground Trees
+    uniqueID: 4291349623
+    locked: 0
+  - name: Main
+    uniqueID: 1349508651
     locked: 0
   - name: Forerground
     uniqueID: 465230441
