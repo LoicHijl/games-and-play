@@ -15026,7 +15026,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1700204761}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2eb289a036fedf446abfe3121962ea2b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -15041,7 +15041,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1700204761}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 57083a0eafdad5b4da53911d4aa060b6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -15099,6 +15099,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 1557679421}
   m_CeilingCheck: {fileID: 1589490151}
   m_CrouchDisableCollider: {fileID: 0}
+  m_Grounded: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
