@@ -363,7 +363,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175518953}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.033, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 934014821}
@@ -12005,8 +12005,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &175518957
-TilemapCollider2D:
+--- !u!68 &175518957
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -12018,6 +12018,32 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -26.710104, y: -5.886997}
+  - {x: -20.738178, y: 0.04906082}
+  - {x: -18.870098, y: 0.97733057}
+  - {x: -14.750413, y: 0.95592594}
+  - {x: -12.821614, y: -0.018220305}
+  - {x: -10.931305, y: -0.0045579206}
+  - {x: -8.981502, y: 0.9833569}
+  - {x: -3.0129414, y: 0.9789593}
+  - {x: -0.94283605, y: 2.010094}
+  - {x: 3.0157058, y: 5.9531145}
+  - {x: 5.0436106, y: 6.9372663}
+  - {x: 5.99327, y: 7.966896}
+  - {x: 6.4358244, y: 8.190917}
+  - {x: 4.9656444, y: 9.336611}
+  - {x: 4.9603925, y: 9.887156}
+  - {x: 13.825152, y: 9.93924}
+  - {x: 13.847962, y: 9.170353}
+  - {x: 11.853056, y: 7.9217386}
+  - {x: 11.912742, y: 6.9731927}
+  - {x: 30.732113, y: 6.9360204}
+  - {x: 34.7302, y: 4.8729815}
+  - {x: 42.484596, y: -3.0303416}
+  - {x: 44.55222, y: -3.968608}
+  - {x: 128.73288, y: -4.011775}
 --- !u!1 &179731781
 GameObject:
   m_ObjectHideFlags: 0
@@ -14972,7 +14998,6 @@ GameObject:
   - component: {fileID: 1700204764}
   - component: {fileID: 1700204763}
   - component: {fileID: 1700204762}
-  - component: {fileID: 1700204769}
   m_Layer: 8
   m_Name: player-idle-1
   m_TagString: Untagged
@@ -15014,7 +15039,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700204761}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -15066,7 +15091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_JumpForce: 1000
   m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
+  m_MovementSmoothing: 0
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
@@ -15145,25 +15170,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1700204769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1700204761}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74770f6de9db6244f9d17376ff82241a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 0
-  groundPoints: []
-  groundRadius: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  jumpForce: 0
-  airControl: 0
 --- !u!1 &1852323895
 GameObject:
   m_ObjectHideFlags: 0
