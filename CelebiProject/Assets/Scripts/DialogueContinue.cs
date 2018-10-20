@@ -6,8 +6,11 @@ public class DialogueContinue : MonoBehaviour {
 
     public Dialogue dialogue;
 
+    public DialogueContinue cont;
+
     public void TriggerDialogue ()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, cont);
     }
+
 }

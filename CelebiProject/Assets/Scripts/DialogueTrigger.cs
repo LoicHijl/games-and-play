@@ -7,15 +7,12 @@ public class DialogueTrigger : MonoBehaviour {
 
     public Dialogue dialogue;
     public Animator animator;
+    public DialogueContinue cont;
 
 	// Use this for initialization
 	void Start () {
         animator.SetBool("inPocket", false);
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, cont);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

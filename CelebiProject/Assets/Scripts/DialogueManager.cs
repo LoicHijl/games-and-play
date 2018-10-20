@@ -13,6 +13,8 @@ public class DialogueManager : MonoBehaviour {
     private Queue<string> sentences;
     private bool dialogueActive = false;
 
+    private DialogueContinue next;
+
 	// Use this for initialization
 	void Start () {
         sentences = new Queue<string>();
@@ -26,13 +28,15 @@ public class DialogueManager : MonoBehaviour {
         }
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    public void StartDialogue (Dialogue dialogue, DialogueContinue cont)
     {
+        next = cont;
+
         //Debug.Log("Starting dialogue with " + dialogue.name);
         nameText.text = dialogue.name;
 
-        nameText.font = dialogue.font;
-        dialogueText.font = dialogue.font;
+ //       nameText.font = dialogue.font;
+ //       dialogueText.font = dialogue.font;
 
         animator.SetBool("isOpen", true);
 
@@ -78,5 +82,9 @@ public class DialogueManager : MonoBehaviour {
     {
         animator.SetBool("isOpen", false);
         dialogueActive = false;
+        if (next != null)
+        {
+            next.TriggerDialogue();
+        }
     }
 }
