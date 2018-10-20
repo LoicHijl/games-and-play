@@ -8,6 +8,6 @@ public class DialogueManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        sentences = new Queue<string>;
+        sentences = new Queue<string>();
 	}
 }
