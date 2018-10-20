@@ -22535,6 +22535,7 @@ MonoBehaviour:
     sentences:
     - ?!
     - What is this?
+  animator: {fileID: 995402398}
 --- !u!4 &712059058
 Transform:
   m_ObjectHideFlags: 0
@@ -22641,6 +22642,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bdb26f3b7a7f1245bfcd277e5a9ebce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 1065108691}
+  dialogueText: {fileID: 1628433083}
+  animator: {fileID: 1156642475}
 --- !u!4 &884295015
 Transform:
   m_ObjectHideFlags: 0
@@ -22929,8 +22933,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1534064223
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bd59bf2e866ed4529ae645637eb9c11d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -23214,7 +23218,7 @@ GameObject:
   - component: {fileID: 1065108692}
   - component: {fileID: 1065108691}
   m_Layer: 5
-  m_Name: Name
+  m_Name: NameBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23235,8 +23239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260.4, y: 44}
-  m_SizeDelta: {x: 359.2, y: 32.3}
+  m_AnchoredPosition: {x: -492.3, y: 103.9}
+  m_SizeDelta: {x: 574.5, y: 54.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065108691
 MonoBehaviour:
@@ -23259,18 +23263,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5af9e1ddd5dc06c408d4e7113f2fa394, type: 3}
-    m_FontSize: 30
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CHARACTER NAME
+  m_Text: Character Bold
 --- !u!222 &1065108692
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23570,6 +23574,7 @@ GameObject:
   - component: {fileID: 1156642472}
   - component: {fileID: 1156642474}
   - component: {fileID: 1156642473}
+  - component: {fileID: 1156642475}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -23595,8 +23600,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -175}
-  m_SizeDelta: {x: 900, y: 140}
+  m_AnchoredPosition: {x: 0, y: -345}
+  m_SizeDelta: {x: 1600, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1156642473
 MonoBehaviour:
@@ -23631,6 +23636,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1156642471}
   m_CullTransparentMesh: 0
+--- !u!95 &1156642475
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156642471}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 27f230a377a6e9847acad80ce50bf06c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1195203137
 GameObject:
   m_ObjectHideFlags: 0
@@ -25332,8 +25355,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.5, y: -13.9}
-  m_SizeDelta: {x: 881, y: 87.7}
+  m_AnchoredPosition: {x: 0.9, y: -22.275}
+  m_SizeDelta: {x: 1560.9, y: 197.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628433083
 MonoBehaviour:
@@ -25356,11 +25379,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: fec3bfec8bcb8bb4996d28566e760f3a, type: 3}
-    m_FontSize: 20
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -28364,10 +28387,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -29137,8 +29160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333.9, y: -65.3}
-  m_SizeDelta: {x: 214.3, y: 26.6}
+  m_AnchoredPosition: {x: 664.7, y: -130.6}
+  m_SizeDelta: {x: 270.6, y: 18.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2141333922
 MonoBehaviour:
@@ -29161,10 +29184,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: fec3bfec8bcb8bb4996d28566e760f3a, type: 3}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
