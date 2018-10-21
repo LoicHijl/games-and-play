@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MC
+    name: Ekko
     font: {fileID: 12800000, guid: b6df9b618915be34b962f5039b5bcec6, type: 3}
     sentences:
     - I-I don't remember anything...
@@ -22511,6 +22511,14 @@ MonoBehaviour:
       We were sent back with a scout group to find a way to stop the disaster.'
     - But we got stranded here, because I did not have enough fuel to make it to the
       target year...
+    - "Now we have to find more fuel to meet up with the others. \nI think we can
+      find some in this area."
+    - 'I still have a little bit of fuel in my auxiliary capsule which you can use
+      to navigate the level.
+
+      I think you can use it to grow plants to climb on or turn enemies back into
+      little babies. Why don''t we try it?'
+    - And be sure to collect all things that might provide me with fuel!
   cont: {fileID: 0}
 --- !u!1 &595420293
 GameObject:
@@ -22716,7 +22724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MC
+    name: Ekko
     font: {fileID: 12800000, guid: b6df9b618915be34b962f5039b5bcec6, type: 3}
     sentences:
     - ?!
@@ -22811,6 +22819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884295015}
   - component: {fileID: 884295014}
+  - component: {fileID: 884295016}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -22832,6 +22841,7 @@ MonoBehaviour:
   nameText: {fileID: 1065108691}
   dialogueText: {fileID: 1628433083}
   animator: {fileID: 1156642475}
+  completeUI: {fileID: 2041238528}
 --- !u!4 &884295015
 Transform:
   m_ObjectHideFlags: 0
@@ -22845,6 +22855,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &884295016
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884295013}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d8fb133e54fdbd44c846c712658d4d31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &934014819
 GameObject:
   m_ObjectHideFlags: 0
@@ -28665,6 +28693,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1156642472}
+  - {fileID: 2041238529}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29065,6 +29094,106 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2041238528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2041238529}
+  - component: {fileID: 2041238533}
+  - component: {fileID: 2041238532}
+  - component: {fileID: 2041238531}
+  - component: {fileID: 2041238530}
+  m_Layer: 5
+  m_Name: CutsceneEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2041238529
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041238528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939933903}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2041238530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041238528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e38ba9c6ef28f469450e156173e33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &2041238531
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041238528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 965bd344d0e318a42b45c73aeeaa06f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2041238532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041238528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2041238533
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041238528}
+  m_CullTransparentMesh: 0
 --- !u!1 &2049311055
 GameObject:
   m_ObjectHideFlags: 0
@@ -29376,7 +29505,7 @@ GameObject:
   - component: {fileID: 2141333923}
   - component: {fileID: 2141333922}
   m_Layer: 5
-  m_Name: Text
+  m_Name: SpaceBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29397,8 +29526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 664.7, y: -130.6}
-  m_SizeDelta: {x: 270.6, y: 18.8}
+  m_AnchoredPosition: {x: 648.7, y: -130.6}
+  m_SizeDelta: {x: 302.5, y: 18.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2141333922
 MonoBehaviour:

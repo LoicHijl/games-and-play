@@ -78,6 +78,8 @@ public class DialogueManager : MonoBehaviour {
         }
     }
 
+    public GameObject completeUI;
+
     public void EndDialogue()
     {
         animator.SetBool("isOpen", false);
@@ -85,6 +87,10 @@ public class DialogueManager : MonoBehaviour {
         if (next != null)
         {
             next.TriggerDialogue();
+        } else
+        {
+            completeUI.SetActive(true);
+            //Debug.Log("Next level here");
         }
     }
 }
