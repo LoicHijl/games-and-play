@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogue {
 
+    // Class to store info about dialogue
     public string name;         // Speaker name
     public Font font;           // Speaker font
 
