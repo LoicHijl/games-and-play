@@ -25,6 +25,7 @@ public class TimeDevice : MonoBehaviour
     void shoot()
     {
         Instantiate(energyOrb, firePoint.position, firePoint.rotation);
+        gm.energy -= 1;
     }
 }
 
