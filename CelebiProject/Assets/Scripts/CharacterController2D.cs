@@ -23,6 +23,7 @@ public class CharacterController2D : MonoBehaviour
 	[Space]
 
 	public UnityEvent OnLandEvent;
+    private gameMaster gm;
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
@@ -30,7 +31,12 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
-	private void Awake()
+    private void Start()
+    {
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
+    }
+
+    private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -146,4 +152,14 @@ public class CharacterController2D : MonoBehaviour
         //transform.localScale = theScale;
         transform.Rotate(0f, 180f, 0f);
 	}
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Cherry"))
+        {
+            Destroy(col.gameObject);
+            gm.energy += 5;
+
+        }
+    }
 }
