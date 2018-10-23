@@ -22727,7 +22727,7 @@ MonoBehaviour:
     name: Ekko
     font: {fileID: 12800000, guid: b6df9b618915be34b962f5039b5bcec6, type: 3}
     sentences:
-    - ?!
+    - NANI?!?!
     - What is this?
   animator: {fileID: 995402398}
   cont: {fileID: 1369876808}
