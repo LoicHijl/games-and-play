@@ -18,8 +18,8 @@ public class GameMaster : MonoBehaviour {
 
     }
 
-    public Transform playerPrefab;
-    public Transform spawnPoint;
+    //public Transform playerPrefab;
+   // public Transform spawnPoint;
 
     /*public void RespawnPlayer() {
         Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
