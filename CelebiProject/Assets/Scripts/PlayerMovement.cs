@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour {
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
-    bool inAir;
 
 	// Use this for initialization
 	void Start () {
