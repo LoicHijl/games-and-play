@@ -51,17 +51,11 @@ TagManager:
   - name: Water Background
     uniqueID: 1261126633
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
-  - name: palyer
-    uniqueID: 2776847601
-    locked: 0
-  - name: Foreground Trees
-    uniqueID: 866187389
-    locked: 0
   - name: Main
     uniqueID: 1349508651
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Forerground
     uniqueID: 465230441

@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    
-
-    [SerializeField]
-    public AudioSource hurtSound;
-
     [System.Serializable]
     public class PlayerStats {
 
@@ -34,11 +29,9 @@ public class Player : MonoBehaviour {
 
         playerStats.Health -= damage;
         if (playerStats.Health <= 0) {
-            hurtSound.Play();
+
             GameMaster.KillPlayer();
         }
-
-       
 
     }
 
