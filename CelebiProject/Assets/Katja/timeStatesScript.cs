@@ -2,18 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class timeStatesScript : MonoBehaviour {
+public class timeStatesScript : MonoBehaviour
+{
     public int timeState;
     public int maxtimeState;
     public int mintimeState;
+    private GameMaster gm;
     Animator animator;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         animator = GetComponent<Animator>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (timeState > mintimeState)
         {
             if (Input.GetKeyDown(KeyCode.Q))
@@ -22,7 +27,7 @@ public class timeStatesScript : MonoBehaviour {
             }
         }
         if (timeState < maxtimeState)
-        { 
+        {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 timeState++;
@@ -34,6 +39,18 @@ public class timeStatesScript : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-            animator.SetInteger("timeState", timeState);
-	}
+        animator.SetInteger("timeState", timeState);
+    }
+    public void TransferEnergy()
+    {
+        if (gm.deviceState == 1)
+        {
+            timeState--;
+        }
+        else if (gm.deviceState == 0)
+        {
+            timeState++;
+        }
+
+    }
 }
