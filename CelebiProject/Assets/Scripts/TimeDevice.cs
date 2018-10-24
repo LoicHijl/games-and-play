@@ -16,12 +16,12 @@ public class TimeDevice : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && gm.energy > 0)
+        if (Input.GetKeyDown(KeyCode.Z) && gm.energy > 0)
         {
             deviceState = 0;
             shoot();
         }
-        if (Input.GetButtonDown("Fire2") && gm.energy > 0)
+        if (Input.GetKeyDown(KeyCode.X) && gm.energy > 0)
         {
             gm.deviceState = 1;
             shoot();
