@@ -2,26 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-<<<<<<< HEAD:CelebiProject/Assets/GameMaster.cs
-=======
-using UnityEngine.UI;
-
->>>>>>> Marnix2:CelebiProject/Assets/Scripts/GameMaster.cs
 
 public class GameMaster : MonoBehaviour
 {
 
     public static GameMaster gm;
-<<<<<<< HEAD:CelebiProject/Assets/GameMaster.cs
 
     void Start()
     {
-=======
-    public int energy;
-    public int deviceState;
-    public Text energyText;
-    void Start() {
->>>>>>> Marnix2:CelebiProject/Assets/Scripts/GameMaster.cs
 
         if (gm == null)
         {
