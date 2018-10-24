@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+    public CharacterController2D characterController2D;
+
     public CharacterController2D controller;
     public Animator animator;
 
@@ -15,6 +17,7 @@ public class PlayerMovement : MonoBehaviour {
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
+    bool inAir;
 
 	// Use this for initialization
 	void Start () {
@@ -31,11 +34,16 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-            jumpSound.Play();
+
 
             animator.SetBool("IsJumping", true);
         }
 
+        if (jump ==  true && characterController2D.m_Grounded == true) {
+
+            jumpSound.Play();
+
+        }
 
       
 
