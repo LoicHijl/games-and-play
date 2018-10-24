@@ -1,16 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
+using UnityEngine.SceneManagement; 
 
 public class GameMaster : MonoBehaviour {
 
     public static GameMaster gm;
-    public int energy;
-    public int deviceState;
-    public Text energyText;
+
     void Start() {
 
         if (gm == null) {

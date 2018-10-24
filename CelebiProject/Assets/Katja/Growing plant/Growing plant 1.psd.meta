@@ -1,24 +1,25 @@
 fileFormatVersion: 2
-guid: 45e612521e3c71544bc2d7a61a15aebe
+guid: eb87c96db54a356438599f0e9e6d902e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlantSprite_0
-    21300002: PlantSprite_1
-    21300004: PlantSprite_2
-    21300006: PlantSprite_3
-    21300008: PlantSprite_4
-    21300010: PlantSprite_5
-    21300012: PlantSprite_6
-    21300014: PlantSprite_7
-    21300016: PlantSprite_8
-    21300018: PlantSprite_9
-    21300020: PlantSprite_10
-    21300022: PlantSprite_11
-    21300024: PlantSprite_12
-    21300026: PlantSprite_13
-    21300028: PlantSprite_14
-    21300030: PlantSprite_15
-    21300032: PlantSprite_16
+    21300000: Growing plant 1_0
+    21300002: Growing plant 1_1
+    21300004: Growing plant 1_2
+    21300006: Growing plant 1_3
+    21300008: Growing plant 1_4
+    21300010: Growing plant 1_5
+    21300012: Growing plant 1_6
+    21300014: Growing plant 1_7
+    21300016: Growing plant 1_8
+    21300018: Growing plant 1_9
+    21300020: Growing plant 1_10
+    21300022: Growing plant 1_11
+    21300024: Growing plant 1_12
+    21300026: Growing plant 1_13
+    21300028: Growing plant 1_14
+    21300030: Growing plant 1_15
+    21300032: Growing plant 1_16
+    21300034: Growing plant 1_17
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -48,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -101,341 +102,361 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlantSprite_0
+      name: Growing plant 1_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 305
-        width: 9
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 34
+        y: 605
+        width: 47
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7090615631dcb945abb9c269f0772e7
+      spriteID: 075354b54fb7e3947b378feb93c7f582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_1
+      name: Growing plant 1_1
       rect:
         serializedVersion: 2
-        x: 113
-        y: 305
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 162
+        y: 605
+        width: 41
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2f6af41c6a7e7d4f96aa9bbaad9c6c3
+      spriteID: 3b89f0f6f83058e4db28be7d01380a67
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_2
+      name: Growing plant 1_2
       rect:
         serializedVersion: 2
-        x: 169
-        y: 305
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 296
+        y: 605
+        width: 40
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b909a5f9fde4939428a644274b9136b9
+      spriteID: a90d7720ffcd60d469acb18b66727b66
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_3
+      name: Growing plant 1_3
       rect:
         serializedVersion: 2
-        x: 219
-        y: 305
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 429
+        y: 605
+        width: 41
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a34b4609c0347f468b746c5dd2dec55
+      spriteID: cc10228681b616545b9ceea52326dc0e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_4
+      name: Growing plant 1_4
       rect:
         serializedVersion: 2
-        x: 267
-        y: 305
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 562
+        y: 605
+        width: 41
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 973d5765959cb4749ad1771b4f737090
+      spriteID: 75fa5fce2c2cf4d42946cccce22e0c80
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_5
+      name: Growing plant 1_5
       rect:
         serializedVersion: 2
-        x: 323
-        y: 305
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 695
+        y: 605
+        width: 52
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b85a5a323d3dce4881b94ab9e695575
+      spriteID: 91f533e1fbed39c40b8218b431a96612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_6
+      name: Growing plant 1_6
       rect:
         serializedVersion: 2
-        x: 62
-        y: 167
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 34
+        y: 387
+        width: 56
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af51cb85661fc414b89dc10b2e68cb82
+      spriteID: 92937d11dc1a01a4292ef473fb89f4f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_7
+      name: Growing plant 1_7
       rect:
         serializedVersion: 2
-        x: 110
-        y: 167
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 167
+        y: 387
+        width: 57
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e666aaeea5f2705449dd33fbd305ddbe
+      spriteID: 00d79e75e385f364382d8f770c0385ac
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_8
+      name: Growing plant 1_8
       rect:
         serializedVersion: 2
-        x: 166
-        y: 167
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 301
+        y: 387
+        width: 56
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a32442d8b2476974a8a7faa10b577961
+      spriteID: 952e752b034d1154e9281bfa0bf03264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_9
+      name: Growing plant 1_9
       rect:
         serializedVersion: 2
-        x: 219
-        y: 167
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 434
+        y: 387
+        width: 56
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a780db3f3bc99704eaec9360ac145adf
+      spriteID: b321e4a105b27df409808904449d6643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_10
+      name: Growing plant 1_10
       rect:
         serializedVersion: 2
-        x: 267
-        y: 168
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 567
+        y: 387
+        width: 57
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 762cee817132da4438c09070ab13d41c
+      spriteID: 7910efd6bc31a15468668be6ee8b0519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_11
+      name: Growing plant 1_11
       rect:
         serializedVersion: 2
-        x: 323
-        y: 167
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 387
+        width: 57
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4304ebd2546b87845ba1d0a10d34ea08
+      spriteID: aa794d4033b03e24ea3ee9c1f685cc6d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_12
+      name: Growing plant 1_12
       rect:
         serializedVersion: 2
-        x: 62
-        y: 18
-        width: 11
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 34
+        y: 84
+        width: 56
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59801624c488b0245be998486d9636a6
+      spriteID: f0bffe51881c2824fb19f68c0c1c2a67
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_13
+      name: Growing plant 1_13
       rect:
         serializedVersion: 2
-        x: 112
-        y: 18
-        width: 16
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 167
+        y: 84
+        width: 57
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ead57b4f2e8ac544b5c8bc463e61433
+      spriteID: ed2e9929f26636448ac2bc232eaeca76
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_14
+      name: Growing plant 1_14
       rect:
         serializedVersion: 2
-        x: 161
-        y: 18
-        width: 16
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 301
+        y: 84
+        width: 56
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 835d22dc3a66fa247ad5374190751f70
+      spriteID: 76aa370cc441ae04e963120fad689a7f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_15
+      name: Growing plant 1_15
       rect:
         serializedVersion: 2
-        x: 203
-        y: 16
-        width: 16
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 434
+        y: 84
+        width: 56
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4020f51dbdd251948a7d40a0b642cd9d
+      spriteID: 0ea360105cf514e45b76e47710d5c556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlantSprite_16
+      name: Growing plant 1_16
       rect:
         serializedVersion: 2
-        x: 236
-        y: 18
-        width: 23
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 567
+        y: 84
+        width: 57
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c88614bdd85cbec4a84cfb9b334982c2
+      spriteID: 9cd5bab1523fd554693dcf9204f78920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Growing plant 1_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 84
+        width: 57
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1e5fcf3da90ea418f1fffe58fe70e4
       vertices: []
       indices: 
       edges: []
@@ -443,7 +464,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 12c32eae1705190418eae3f9f5527bc5
+    spriteID: 5cd98ed3f0a90bd4c9715397b5cef7f5
     vertices: []
     indices: 
     edges: []
