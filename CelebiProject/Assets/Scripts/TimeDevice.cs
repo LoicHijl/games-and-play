@@ -21,7 +21,7 @@ public class TimeDevice : MonoBehaviour
             deviceState = 0;
             shoot();
         }
-        if (Input.GetKeyDown(KeyCode.X) && gm.energy > 0)
+        else if (Input.GetKeyDown(KeyCode.X) && gm.energy > 0)
         {
             gm.deviceState = 1;
             shoot();
@@ -32,6 +32,7 @@ public class TimeDevice : MonoBehaviour
     {
         Instantiate(energyOrb, firePoint.position, firePoint.rotation);
         gm.energy -= 1;
+        
     }
 }
 

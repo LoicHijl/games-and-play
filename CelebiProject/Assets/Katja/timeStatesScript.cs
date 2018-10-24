@@ -35,7 +35,7 @@ public class timeStatesScript : MonoBehaviour
         }
 
         //This only if it needs to die
-        if (timeState == mintimeState || timeState == maxtimeState)
+        if (timeState <= mintimeState || timeState >= maxtimeState)
         {
             Destroy(gameObject);
         }
