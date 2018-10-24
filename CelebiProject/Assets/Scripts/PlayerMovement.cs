@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+    public CharacterController2D characterController2D;
+
     public CharacterController2D controller;
     public Animator animator;
+
+    [SerializeField]
+    public AudioSource jumpSound;
 
     public float runSpeed = 40f;
 
@@ -28,8 +33,18 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+
+
             animator.SetBool("IsJumping", true);
         }
+
+        if (jump ==  true && characterController2D.m_Grounded == true) {
+
+            jumpSound.Play();
+
+        }
+
+      
 
         if (Input.GetButtonDown("Crouch"))
         {
