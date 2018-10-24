@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour {
     public CharacterController2D controller;
     public Animator animator;
 
+    [SerializeField]
+    public AudioSource jumpSound;
+
     public float runSpeed = 40f;
 
     float horizontalMove = 0f;
@@ -28,8 +31,13 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            jumpSound.Play();
+
             animator.SetBool("IsJumping", true);
         }
+
+
+      
 
         if (Input.GetButtonDown("Crouch"))
         {

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    [SerializeField]
+    public AudioSource hurtSound;
+
     [System.Serializable]
     public class PlayerStats {
 
@@ -32,6 +35,8 @@ public class Player : MonoBehaviour {
 
             GameMaster.KillPlayer();
         }
+
+        hurtSound.Play();
 
     }
 
