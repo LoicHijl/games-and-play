@@ -2,18 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EagleScript : MonoBehaviour {
+public class EagleScript : MonoBehaviour
+{
+    private GameMaster gm;
     timeStatesScript timeStateScript;
     public int timeState;
     public int t;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         GetComponent<Rigidbody2D>().gravityScale = 0;
         GetComponent<Rigidbody2D>().velocity = new Vector2(-1, 0);
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         //update timecount
         t += 1;
 
@@ -22,14 +27,15 @@ public class EagleScript : MonoBehaviour {
         timeState = timeStateScript.timeState;
 
         //check whether it is in the egg state or the bird state
-        if (timeState == 1) {
+        if (timeState == 1)
+        {
             GetComponent<Rigidbody2D>().gravityScale = 1;
             GetComponent<Rigidbody2D>().velocity *= new Vector2(0, 1);
         }
         else
         {
             GetComponent<Rigidbody2D>().gravityScale = 0;
-            
+
             //standard movement
             if (t == 200)
             {
@@ -44,4 +50,5 @@ public class EagleScript : MonoBehaviour {
             }
         }
     }
+    
 }
