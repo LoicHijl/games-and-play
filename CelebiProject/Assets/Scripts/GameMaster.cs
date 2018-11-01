@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameMaster : MonoBehaviour
 {
-
+    public GameObject completeLevelText;
     public static GameMaster gm;
     public int energy;
     public int deviceState;
@@ -43,4 +43,8 @@ public class GameMaster : MonoBehaviour
          gm.RespawnPlayer();*/
     }
 
+    public void CompleteLevel()
+    {
+        completeLevelText.SetActive(true);
+    }
 }
